@@ -18,14 +18,18 @@ public:
     ~Calculator();
 private slots:
 //    void on_plus_btn_clicked();
+    //button cliked
    void NumPressed();
+   //arithmatic operations
    void MathButtonPressed();
+   //Equal Button
     void EqualButtonPressed();
+    //changing number sign
     void ChangeNumberSign();
 
 
 
-
+//clear button
     void on_Clear_clicked();
 
 private:
