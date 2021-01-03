@@ -44,6 +44,7 @@ void VideoPlayer::on_actionOpenVideo_triggered()
     on_actionStop_triggered();
 
     player->setMedia(QUrl::fromLocalFile(filename));
+//player->setMedia(QUrl::fromLocalFile(filenames));
 
     on_actionPlay_triggered();
 

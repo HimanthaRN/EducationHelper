@@ -1,6 +1,6 @@
 #include "calculator.h"
 #include "ui_calculator.h"
-
+//set starting values
 double calcVal = 0.0;
 bool divTrigger = false;
 bool multTrigger = false;
@@ -10,7 +10,7 @@ bool subTrigger = false;
 Calculator::Calculator(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Calculator)
-{
+{//user interface code
     ui->setupUi(this);
     ui->Display->setText(QString::number(calcVal));
     QPushButton *numButtons[10];

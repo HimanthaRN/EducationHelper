@@ -1,3 +1,4 @@
+#when you developing video tutorial this is cumpolsory "gui multimedia multimediawidgets"
 QT       += core gui gui multimedia multimediawidgets
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
