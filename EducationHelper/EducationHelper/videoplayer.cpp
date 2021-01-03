@@ -18,7 +18,7 @@ VideoPlayer::VideoPlayer(QWidget *parent) :
     bar = new QProgressBar(this);
 
     slider->setOrientation(Qt::Horizontal);
-
+    //status bar slider and progress bar
     ui->statusbar->addPermanentWidget(slider);
     ui->statusbar->addPermanentWidget(bar);
 
@@ -44,29 +44,30 @@ void VideoPlayer::on_actionOpenVideo_triggered()
     on_actionStop_triggered();
 
     player->setMedia(QUrl::fromLocalFile(filename));
+//player->setMedia(QUrl::fromLocalFile(filenames));
 
     on_actionPlay_triggered();
 
 }
-
+//playing video
 void VideoPlayer::on_actionPlay_triggered()
 {
     player->play();
     ui->statusbar->showMessage("Playing");
 }
-
+//pause video
 void VideoPlayer::on_actionPause_triggered()
 {
     player->pause();
     ui->statusbar->showMessage("Paused...");
 }
-
+//stop video button
 void VideoPlayer::on_actionStop_triggered()
 {
     player->stop();
     ui->statusbar->showMessage("Stoped");
 }
-
+//about tutorial player
 void VideoPlayer::on_actionAbout_triggered()
 {
     QString about_text;
